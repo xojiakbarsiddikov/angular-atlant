@@ -1,0 +1,32 @@
+<section>
+  <div class="container">
+    <div class="img-container">
+      <div class="down-images">
+        <img src="./assets/images/Vector%201.svg" class="img-width1" alt="icon1">
+        <img src="./assets/images/Vector%202.svg" class="img-width2" alt="icon2">
+        <img src="./assets/images/Vector%203.svg" class="img-width3" alt="icon3">
+      </div>
+    </div>
+    <div class="text-wrapper">
+      <h1>{{ title }}</h1>
+    </div>
+    <div class="card-products">
+      <app-card-products
+        *ngFor="let card of cards"
+       [card]="card"
+      ></app-card-products>
+    </div>
+    <div class="card-footer df">
+      <img src="./assets/images/car.png" alt="car">
+      <div class="text">
+        <h1 class="text-title">
+          {{ watch }}
+          <span>{{ watch_list }}</span>
+        </h1>
+        <div class="btn-wrapper">
+          <button class="btn">{{ btn }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

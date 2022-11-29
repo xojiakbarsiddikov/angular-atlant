@@ -1,0 +1,26 @@
+<section class="back">
+  <div class="container">
+    <h1>{{ title }}</h1>
+    <div class="content">
+      <swiper [navigation]="true" class="mySwiper">
+        <ng-template swiperSlide>
+          <div class="img">
+            <img src="./assets/images/car1.png" class="car1" alt="car1">
+            <img src="./assets/images/car2.png" class="car2" alt="car1">
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+        <div class="img">
+          <img src="./assets/images/car4.png" class="car3" alt="car4">
+          <img src="./assets/images/car3.png" class="car4" alt="car3">
+        </div>
+      </ng-template>
+      </swiper>
+      <div class="btn-wrapper">
+        <button class="btn background">
+          {{ btn }}
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

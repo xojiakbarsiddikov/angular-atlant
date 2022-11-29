@@ -1,0 +1,77 @@
+<div class="container">
+  <div class="content df justify-between">
+    <div class="form">
+      <h2>{{ title }}</h2>
+      <form action="">
+        <input type="email" [placeholder]="name">
+        <input type="number" [placeholder]="number">
+        <textarea name="description" [placeholder]="question"></textarea>
+      </form>
+      <button>{{ btn }}</button>
+    </div>
+    <div class="img-content">
+      <img src="../../../assets/images/blue.jpg" alt="blue-car">
+      <button>{{ category }}<br/><span class="texts">{{ description }}</span></button>
+    </div>
+  </div>
+  <div class="btn-wrapper">
+    <app-footer-btn
+      *ngFor="let footer of footers" [footer]="footer"
+    >
+    </app-footer-btn>
+  </div>
+  <div class="content-box">
+    <div class="footer-text">
+      <h1>{{ free_text }}</h1>
+      <button class="btn background width" (click)="openDialog()">
+        {{ order }}
+      </button>
+
+    </div>
+  </div>
+  <div class="footer-map df">
+    <div class="footer">
+      <div class="text-wrap1">
+        <h1>{{ ofis_text }}</h1>
+        <p>{{ paragraf }}</p>
+        <div class="text-content">
+          <h4 class="color-active">{{ label }}</h4>
+          <h4>{{ video }}</h4>
+        </div>
+        <div class="text-content bottom">
+          <h4 class="color-active">{{ phone }}</h4>
+          <h4>{{ text_phone }}</h4>
+        </div>
+      </div>
+    </div>
+    <div style="position:relative;overflow:hidden;"><a
+      href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps"
+      style="color:#eee;font-size:12px;position:absolute;top:0px;">Ташкент</a><a
+      href="https://yandex.uz/maps/10335/tashkent/?ll=69.219123%2C41.310618&utm_medium=mapframe&utm_source=maps&z=11"
+      style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a>
+      <iframe src="https://yandex.uz/map-widget/v1/-/CCUfA6HeDB" width="570" height="600"  frameborder="1"
+              allowfullscreen="true" style="position:relative;"></iframe>
+    </div>
+  </div>
+  <div class="footer-text df align-center justify-between">
+    <p>{{ list }}</p>
+    <p>{{ item }}</p>
+  </div>
+</div>
+
+<div class="popup-container" *ngIf="show">
+  <div class="popup-content"  (click)="closeDialog()"></div>
+  <div class="popup-body">
+    <form>
+      <div class="text-boxx df justify-between">
+        <h2>{{ delively }}</h2>
+        <button class="close" (click)="closeDialog()">
+          <i class="fa-solid fa-x close-btn"></i>
+        </button>
+      </div>
+      <input  type="text" [placeholder]="name">
+      <input  type="number" [placeholder]="number">
+      <button routerLink="/thanks" type="submit" class="btn background widthh">{{ lists }}</button>
+    </form>
+  </div>
+</div>

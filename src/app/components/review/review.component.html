@@ -1,0 +1,73 @@
+<section>
+  <div class="container">
+    <div class="text-box">
+      <h1>{{ review }}</h1>
+    </div>
+    <div class="slider-wrapper">
+      <swiper [effect]="'cards'" [grabCursor]="true" [pagination]="{
+      clickable: true
+    }" class="mySwiper">
+          <ng-template swiperSlide class="swiper1">
+            <div class="content_box">
+              <div class="img-wrapper">
+                <img src="./assets/images/blue.webp" alt="blue-car">
+              </div>
+              <div class="text-wrapper">
+                <h1>{{ blue }}</h1>
+                <h4>{{ city }}</h4>
+                <p>{{ description }}</p>
+              </div>
+            </div>
+          </ng-template
+          ><ng-template swiperSlide class="swiper1">
+        <div class="content_box">
+          <div class="img-wrapper">
+            <img src="./assets/images/red.webp" alt="red-car">
+          </div>
+          <div class="text-wrapper">
+            <h1>{{ red }}</h1>
+            <h4>{{ city }}</h4>
+            <p>{{ description }}</p>
+          </div>
+        </div>
+      </ng-template>
+        <ng-template swiperSlide class="swiper1">
+        <div class="content_box">
+          <div class="img-wrapper">
+            <img src="./assets/images/yellow.jpg" alt="yellow-car">
+          </div>
+          <div class="text-wrapper">
+            <h1>{{ yellow }}</h1>
+            <h4>{{ city }}</h4>
+            <p>{{ description }}</p>
+          </div>
+        </div>
+      </ng-template>
+        <ng-template swiperSlide class="swiper1">
+        <div class="content_box">
+          <div class="img-wrapper">
+            <img src="./assets/images/green.webp" alt="green-car">
+          </div>
+          <div class="text-wrapper">
+            <h1>{{ green }}</h1>
+            <h4>{{ city }}</h4>
+            <p>{{ description }}</p>
+          </div>
+        </div>
+      </ng-template>
+        <ng-template swiperSlide class="swiper1">
+        <div class="content_box">
+          <div class="img-wrapper">
+            <img src="./assets/images/black.webp" alt="black-car">
+          </div>
+          <div class="text-wrapper">
+            <h1>{{ black }}</h1>
+            <h4>{{ city }}</h4>
+            <p>{{ description }}</p>
+          </div>
+        </div>
+      </ng-template>
+      </swiper>
+    </div>
+  </div>
+</section>

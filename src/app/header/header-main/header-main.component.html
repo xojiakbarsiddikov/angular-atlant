@@ -1,0 +1,31 @@
+<div class="container df">
+  <div class="content">
+    <div class="icon-box df">
+      <div class="icon-one" *ngFor="let icon of icons">
+        <div class="icons">
+          <i [ngClass]="icon.moon_icon" class="moon"></i>
+          <i [ngClass]="icon.right_icon"></i>
+          <i [ngClass]="icon.soon_icon"></i>
+        </div>
+        <h4>{{ icon.label }}</h4>
+      </div>
+    </div>
+    <div class="text-wrapper">
+      <div class="text-h1">
+        <h1>{{ delivery }}</h1>
+      </div>
+      <div class="text-p">
+        <p>{{ moscow }}</p>
+      </div>
+      <div class="btn-wrapper">
+        <button class="btn background">
+          {{ btn }}
+        </button>
+        <p>{{ delivery_list }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="img-content">
+    <img src="./assets/images/background.png" alt="car-background">
+  </div>
+</div>

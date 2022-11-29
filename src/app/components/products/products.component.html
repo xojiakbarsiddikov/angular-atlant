@@ -1,0 +1,42 @@
+<section>
+  <div class="container">
+    <div class="text">
+      <h1>{{ price }}</h1>
+    </div>
+    <div class="content df">
+      <div class="text-wrapper">
+        <h2>{{ title }}</h2>
+        <h4>{{ name }}</h4>
+        <p>{{ description }}</p>
+        <button>{{ order }}</button>
+      </div>
+      <div class="img-wrapper">
+        <h4>{{ category }}</h4>
+        <div class="wrap df">
+          <div class="text_one">
+            <h2>
+              {{ price_list }}
+              <br>
+              <span class="title-list">{{ title }}a</span>
+            </h2>
+          </div>
+          <div class="border-right"></div>
+          <div class="text_two">
+            <h2>
+              {{ price_list2 }}
+              <br>
+              <span class="title-list">{{ car }}a</span>
+            </h2>
+          </div>
+        </div>
+        <img src="./assets/images/products-car.png" [alt]="title">
+      </div>
+      <div class="text-wrapper">
+        <h2>{{ car }}</h2>
+        <h4>{{ litr }}</h4>
+        <p>{{ description_list }}</p>
+        <button>{{ order }}</button>
+      </div>
+    </div>
+  </div>
+</section>

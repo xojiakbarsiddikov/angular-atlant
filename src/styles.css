@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.df {
+ display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.background:hover,
+.btn-wrapper button:hover,
+.btn:hover,
+.text-wrapper button:hover{
+  transition: .3s ease-in-out;
+  color: #108CFF!important;
+  background: #ffff!important;
+}
+
+
+.text-box h1:hover,
+.margin:hover,
+.fa-solid:hover,
+.form h2:hover {
+  transition: .3s ease-in-out;
+  color: #108CFF!important;
+}
+
+.active {
+  overflow: hidden!important;
+}

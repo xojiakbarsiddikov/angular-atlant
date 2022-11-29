@@ -1,0 +1,26 @@
+.text-wrapper {
+  font-family: 'Russo One', sans-serif;
+  font-style: normal;
+  text-align: center;
+}
+
+.text-wrapper h2 {
+  font-weight: 400;
+  font-size: 24px;
+  width: 300px;
+  color: #2194FF;
+  margin: 8px 0 15px;
+}
+
+.text-wrapper p {
+  font-family: 'Open Sans', sans-serif!important;
+  font-weight: 300;
+  font-size: 16px;
+  width: 280px;
+  color: #F1F1F1;
+}
+
+.content {
+  max-width: 311px;
+  text-align: center;
+}

@@ -1,0 +1,13 @@
+.btn {
+  width: 166px;
+  height: 66px;
+  background: #F1F1F1;
+  border-radius: 20px;
+  border: none;
+}
+
+.btn:hover {
+  transition: .4s ease;
+  transform: translateY(-20px);
+  background: #fff;
+}
